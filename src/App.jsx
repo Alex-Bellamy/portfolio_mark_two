@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -20,9 +21,7 @@ const App = () => {
         <Grid container spacing={1}>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
-              <h1>projects.</h1>
-              <h1>about.</h1>
-              <h1>contact.</h1>
+              <Header />
             </Paper>
           </Grid>
           <Grid item xs={12}>
