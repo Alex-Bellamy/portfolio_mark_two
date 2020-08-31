@@ -10,49 +10,69 @@ const PageGrid = () => {
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {
+      height: "100vh",
+      width: "100vw"
+    }
   }));
 
   const useStylesProjects = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {
+      height: "100vh",
+      width: "100vw"
+  },
   }));
 
   const useStylesPhotoOne = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {
+      height: "75vh",
+      width: "100vw"
+  },
   }));
 
   const useStylesAbout = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {height: "50vh",
+    width: "100vw"
+  },
   }));
 
   const useStylesPhotoTwo = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {
+      height: "100vh",
+      width: "100vw"
+    },
   }));
 
   const useStylesContact = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: {
+      height: "100vh",
+      width: "100vw"
+    },
   }));
 
   const useStylesFooter = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {},
+    paper: { 
+    height: "5vh",
+    width: "100vw"
+  },
   }));
 
   const classHeader = useStylesHeader();
@@ -65,7 +85,7 @@ const PageGrid = () => {
 
   return (
     <>
-      <Grid container spacing={1}>
+      <Grid container spacing={0}>
         <Grid item xs={12}>
           <Paper className={classHeader.paper}>
             <Header />
