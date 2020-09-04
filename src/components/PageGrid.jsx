@@ -12,8 +12,9 @@ const PageGrid = () => {
     },
     paper: {
       height: "100vh",
-      width: "100vw"
-    }
+      width: "100vw",
+      boxShadow: "none",
+    },
   }));
 
   const useStylesProjects = makeStyles((theme) => ({
@@ -22,8 +23,9 @@ const PageGrid = () => {
     },
     paper: {
       height: "100vh",
-      width: "100vw"
-  },
+      width: "100vw",
+      boxShadow: "none",
+    },
   }));
 
   const useStylesPhotoOne = makeStyles((theme) => ({
@@ -32,17 +34,16 @@ const PageGrid = () => {
     },
     paper: {
       height: "75vh",
-      width: "100vw"
-  },
+      width: "100vw",
+      boxShadow: "none",
+    },
   }));
 
   const useStylesAbout = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {height: "50vh",
-    width: "100vw"
-  },
+    paper: { height: "50vh", width: "100vw", boxShadow: "none" },
   }));
 
   const useStylesPhotoTwo = makeStyles((theme) => ({
@@ -51,7 +52,8 @@ const PageGrid = () => {
     },
     paper: {
       height: "100vh",
-      width: "100vw"
+      width: "100vw",
+      boxShadow: "none",
     },
   }));
 
@@ -61,7 +63,8 @@ const PageGrid = () => {
     },
     paper: {
       height: "100vh",
-      width: "100vw"
+      width: "100vw",
+      boxShadow: "none",
     },
   }));
 
@@ -69,10 +72,11 @@ const PageGrid = () => {
     root: {
       flexGrow: 1,
     },
-    paper: { 
-    height: "5vh",
-    width: "100vw"
-  },
+    paper: {
+      height: "5vh",
+      width: "100vw",
+      boxShadow: "none",
+    },
   }));
 
   const classHeader = useStylesHeader();
