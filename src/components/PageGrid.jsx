@@ -12,8 +12,13 @@ const PageGrid = () => {
     },
     paper: {
       height: "100vh",
-      width: "100vw",
       boxShadow: "none",
+      backgroundImage: `url(${"images/headerBackground.jpg"})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      width: `calc(100vw + 24px)`,
+      margin: -12,
+      padding: 12,
     },
   }));
 
