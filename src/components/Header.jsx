@@ -47,12 +47,13 @@ const Header = () => {
           </Grid>
         </Grid>
         <Typography
+          data-cy="title"
           variant="h4"
           gutterBottom
           style={{
             color: primary,
             fontWeight: "bold",
-            textAlign: "center", 
+            textAlign: "center"
           }}
         >
           alex bellamy :fullStack_webDeveloper <br />

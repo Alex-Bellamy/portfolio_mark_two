@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import About from "./About";
 import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -107,7 +108,13 @@ const PageGrid = () => {
           <Paper className={classPhotoOne.paper}>photo 1 placeholder</Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classAbout.paper}>about.</Paper>
+          <Paper className={classAbout.paper}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <About />
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classPhotoTwo.paper}>photo 2 placeholder</Paper>
