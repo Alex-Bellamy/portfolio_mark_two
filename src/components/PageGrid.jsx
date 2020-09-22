@@ -82,6 +82,7 @@ const PageGrid = () => {
     paper: {
       height: "5vh",
       width: "100vw",
+      backgroundColor: "red",
       boxShadow: "none",
     },
   }));
