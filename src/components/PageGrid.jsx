@@ -61,6 +61,7 @@ const PageGrid = () => {
       height: "100vh",
       width: "100vw",
       boxShadow: "none",
+      backgroundImage: `url(${"images/photoTwo.jpg"})`,
     },
   }));
 
@@ -112,14 +113,11 @@ const PageGrid = () => {
         <Grid item xs={12}>
           <Paper className={classAbout.paper}>
             <br />
-            <br />
-            <br />
-            <br />
             <About />
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classPhotoTwo.paper}>photo 2 placeholder</Paper>
+          <Paper className={classPhotoTwo.paper}></Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classContact.paper}>contact.</Paper>
