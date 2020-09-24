@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Projects from "./Projects";
 import About from "./About";
 import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -105,7 +106,8 @@ const PageGrid = () => {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classProjects.paper}>projects.</Paper>
+          <Paper className={classProjects.paper}></Paper>
+          <Projects />
         </Grid>
         <Grid item xs={12}>
           <Paper className={classPhotoOne.paper}></Paper>
