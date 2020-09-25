@@ -4,7 +4,8 @@ import Typography from "@material-ui/core/Typography";
 const Projects = () => {
   return (
     <>
-    <Typography
+      <Typography
+        id="projects."
         data-cy="title"
         variant="h1"
         style={{

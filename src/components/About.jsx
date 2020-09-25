@@ -5,6 +5,7 @@ const About = () => {
   return (
     <>
       <Typography
+        id="about."
         data-cy="title"
         variant="h1"
         style={{
@@ -15,6 +16,7 @@ const About = () => {
         about.
       </Typography>
       <Typography
+        id="aboutContent"
         data-cy="content"
         variant="h6"
         style={{

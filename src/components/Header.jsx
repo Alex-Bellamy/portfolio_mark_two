@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import grey from "@material-ui/core/colors/grey";
 import ExpandMoreTwoToneIcon from "@material-ui/icons/ExpandMoreTwoTone";
 import "fontsource-roboto";
+import { Link } from "react-scroll";
 
 const primary = grey[50];
 
@@ -32,17 +33,47 @@ const Header = () => {
         <Grid container spacing={3}>
           <Grid item xs>
             <Paper data-cy="title" className={classes.paper}>
-              projects.
+              <Link
+                data-cy="button"
+                activeClass="active"
+                to="projects."
+                spy={true}
+                smooth={true}
+                offset={-1}
+                duration={1500}
+              >
+                projects.
+              </Link>
             </Paper>
           </Grid>
           <Grid item xs>
             <Paper data-cy="title" className={classes.paper}>
-              about.
+              <Link
+                data-cy="button"
+                activeClass="active"
+                to="about."
+                spy={true}
+                smooth={true}
+                offset={-1}
+                duration={1500}
+              >
+                about.
+              </Link>
             </Paper>
           </Grid>
           <Grid item xs>
             <Paper data-cy="title" className={classes.paper}>
-              contact.
+              <Link
+                data-cy="button"
+                activeClass="active"
+                to="contact."
+                spy={true}
+                smooth={true}
+                offset={-1}
+                duration={1500}
+              >
+                contact.
+              </Link>
             </Paper>
           </Grid>
         </Grid>
@@ -53,7 +84,7 @@ const Header = () => {
           style={{
             color: primary,
             fontWeight: "bold",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           alex bellamy :fullStack_webDeveloper <br />
@@ -61,7 +92,7 @@ const Header = () => {
             style={{
               color: primary,
               fontSize: 50,
-              fontWeight: "bold"
+              fontWeight: "bold",
             }}
           />
         </Typography>
