@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Projects from "./Projects";
 import About from "./About";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -106,8 +107,9 @@ const PageGrid = () => {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classProjects.paper}></Paper>
-          <Projects />
+          <Paper className={classProjects.paper}>
+            <Projects />
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classPhotoOne.paper}></Paper>
@@ -122,7 +124,9 @@ const PageGrid = () => {
           <Paper className={classPhotoTwo.paper}></Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classContact.paper}>contact.</Paper>
+          <Paper className={classContact.paper}>
+            <Contact />
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classFooter.paper}>
