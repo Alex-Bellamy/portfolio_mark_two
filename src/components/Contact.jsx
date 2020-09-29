@@ -1,4 +1,5 @@
 import React from "react";
+import EmailFacility from "./EmailFacility"
 import TextField from "@material-ui/core/TextField";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
@@ -65,6 +66,7 @@ const Contact = () => {
           rows={8}
         />{" "}
       </form>
+      <EmailFacility />
     </>
   );
 };
