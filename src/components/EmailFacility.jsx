@@ -69,7 +69,23 @@ const EmailFacility = () => {
         rows={8}
         name="message"
       />
-      <input type="submit" value="Send" />
+      <div>
+        <input type="submit" value="Send" />
+        <i
+          id="linkedin-icon"
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
+          }
+          className="fa fa-linkedin fa-3x"
+          aria-hidden="true"
+        />
+        <i
+          id="github-icon"
+          onClick={() => window.open("https://github.com/Alex-Bellamy")}
+          className="fa fa-github fa-3x"
+          aria-hidden="true"
+        />
+      </div>
     </form>
   );
 };
