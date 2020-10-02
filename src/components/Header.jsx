@@ -88,6 +88,21 @@ const Header = () => {
           }}
         >
           alex bellamy :fullStack_webDeveloper <br />
+          <i
+            id="linkedin-header-icon"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
+            }
+            className="fa fa-linkedin fa"
+            aria-hidden="true"
+          />
+          <i
+            id="github-header-icon"
+            onClick={() => window.open("https://github.com/Alex-Bellamy")}
+            className="fa fa-github fa"
+            aria-hidden="true"
+          />{" "}
+          <br />
           <ExpandMoreTwoToneIcon
             style={{
               color: primary,
