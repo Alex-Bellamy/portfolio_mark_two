@@ -17,10 +17,13 @@ const EmailFacility = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Thanks for the mail, I'll be in contact shortly", result.text);
         },
         (error) => {
-          console.log(error.text);
+          alert(
+            "Something went wrong, please give it another shot",
+            error.text
+          );
         }
       );
   };
