@@ -103,13 +103,24 @@ const Header = () => {
             aria-hidden="true"
           />{" "}
           <br />
-          <ExpandMoreTwoToneIcon
-            style={{
-              color: primary,
-              fontSize: 50,
-              fontWeight: "bold",
-            }}
-          />
+          <Link
+            data-cy="button"
+            activeClass="active"
+            to="projects."
+            spy={true}
+            smooth={true}
+            offset={-1}
+            duration={1500}
+          >
+            <ExpandMoreTwoToneIcon
+              id="expandMoreIcon"
+              style={{
+                color: primary,
+                fontSize: 50,
+                fontWeight: "bold",
+              }}
+            />
+          </Link>
         </Typography>
       </div>
     </>

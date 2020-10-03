@@ -3,8 +3,16 @@ describe("Visitor can navigate page", () => {
     cy.visit("/");
   });
 
-  it("to projects section", () => {
+  it("to projects section by clicking projects title in header", () => {
     cy.get("[data-cy=button]").should("contain", "projects.").click({ multiple: true });
+    cy.get("[data-cy=title]").should("contain", "projects.");
+    cy.contains("#about.").should("not.be.visible");
+    cy.contains("#aboutContent").should("not.be.visible");
+    cy.contains("#contact.").should("not.be.visible");
+  });
+
+  it("to projects section by clicking expand more icon in header", () => {
+    cy.get("#expandMoreIcon").click();
     cy.get("[data-cy=title]").should("contain", "projects.");
     cy.contains("#about.").should("not.be.visible");
     cy.contains("#aboutContent").should("not.be.visible");
