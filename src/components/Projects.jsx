@@ -40,9 +40,27 @@ const Projects = () => {
     },
   }));
 
+  const useStylesProjectTwo = makeStyles((theme: Theme) => ({
+    paper: {
+      backgroundImage: `url(${"images/rockPaperScissors.jpg"})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    },
+  }));
+
+  const useStylesProjectThree = makeStyles((theme: Theme) => ({
+    paper: {
+      backgroundImage: `url(${"images/newsOnRails.jpg"})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    },
+  }));
+
   const projectsClasses = useStylesProjects();
   const otherProjectsClasses = useStylesOtherProjects();
   const projectOneClass = useStylesProjectOne();
+  const projectTwoClass = useStylesProjectTwo();
+  const projectThreeClass = useStylesProjectThree();
 
   return (
     <>
@@ -58,9 +76,21 @@ const Projects = () => {
         projects.
       </Typography>
       <div className={projectsClasses.root}>
-        <Paper className={projectOneClass.paper} variant="outlined" id="projectOne" />
-        <Paper variant="outlined" id="projectTwo" />
-        <Paper variant="outlined" id="projectThree" />
+        <Paper
+          className={projectOneClass.paper}
+          variant="outlined"
+          id="projectOne"
+        />
+        <Paper
+          className={projectTwoClass.paper}
+          variant="outlined"
+          id="projectTwo"
+        />
+        <Paper
+          className={projectThreeClass.paper}
+          variant="outlined"
+          id="projectThree"
+        />
       </div>
       <div className={otherProjectsClasses.root}>
         <Paper variant="outlined" id="otherProjects" />
