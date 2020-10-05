@@ -7,6 +7,9 @@ import Footer from "./Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import grey from "@material-ui/core/colors/grey";
+
+const primary = grey[50];
 
 const PageGrid = () => {
   const useStylesHeader = makeStyles((theme) => ({
@@ -85,6 +88,7 @@ const PageGrid = () => {
     paper: {
       height: "5vh",
       width: "100vw",
+      color: primary,
       backgroundColor: "red",
       boxShadow: "none",
     },
