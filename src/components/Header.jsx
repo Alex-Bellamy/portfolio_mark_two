@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     color: primary,
     backgroundColor: "transparent",
     boxShadow: "none",
+    "&:hover": {
+      color: "red",
+    },
   },
 }));
 

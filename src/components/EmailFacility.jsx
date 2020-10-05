@@ -3,6 +3,23 @@ import emailjs from "emailjs-com";
 import Keys from "./Keys";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
+import {
+  withStyles,
+  Theme,
+} from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import { grey } from "@material-ui/core/colors";
+
+const primary = grey[50];
+
+const ColorButton = withStyles((theme: Theme) => ({
+  root: {
+    backgroundColor: "black",
+    "&:hover": {
+      backgroundColor: grey[500],
+    },
+  },
+}))(Button);
 
 const EmailFacility = () => {
   const sendEmail = (e) => {
@@ -73,7 +90,16 @@ const EmailFacility = () => {
         name="message"
       />
       <div>
-        <input type="submit" value="Send" />
+        <ColorButton
+          variant="outlined"
+          size="large"
+        >
+          <input
+            type="submit"
+            value="Send"
+            style={{ color: primary, border: 0, background: 0, outline: "none" }}
+          />
+        </ColorButton>{" "}
         <i
           id="linkedin-icon"
           onClick={() =>
@@ -81,13 +107,13 @@ const EmailFacility = () => {
           }
           className="fa fa-linkedin fa-3x"
           aria-hidden="true"
-        />
+        />{" "}
         <i
           id="github-icon"
           onClick={() => window.open("https://github.com/Alex-Bellamy")}
           className="fa fa-github fa-3x"
           aria-hidden="true"
-        />
+        />{" "}
       </div>
     </form>
   );
