@@ -56,11 +56,20 @@ const Projects = () => {
     },
   }));
 
+  const useStylesProjectsOther = makeStyles((theme: Theme) => ({
+    paper: {
+      backgroundImage: `url(${"images/otherProjects.jpg"})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    },
+  }));
+
   const projectsClasses = useStylesProjects();
   const otherProjectsClasses = useStylesOtherProjects();
   const projectOneClass = useStylesProjectOne();
   const projectTwoClass = useStylesProjectTwo();
   const projectThreeClass = useStylesProjectThree();
+  const projectsOtherClass = useStylesProjectsOther();
 
   return (
     <>
@@ -93,7 +102,11 @@ const Projects = () => {
         />
       </div>
       <div className={otherProjectsClasses.root}>
-        <Paper variant="outlined" id="otherProjects" />
+        <Paper
+          className={projectsOtherClass.paper}
+          variant="outlined"
+          id="otherProjects"
+        />
       </div>
     </>
   );
