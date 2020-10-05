@@ -32,8 +32,17 @@ const Projects = () => {
     })
   );
 
+  const useStylesProjectOne = makeStyles((theme: Theme) => ({
+    paper: {
+      backgroundImage: `url(${"images/bidSpace.jpg"})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    },
+  }));
+
   const projectsClasses = useStylesProjects();
   const otherProjectsClasses = useStylesOtherProjects();
+  const projectOneClass = useStylesProjectOne();
 
   return (
     <>
@@ -49,7 +58,7 @@ const Projects = () => {
         projects.
       </Typography>
       <div className={projectsClasses.root}>
-        <Paper variant="outlined" id="projectOne" />
+        <Paper className={projectOneClass.paper} variant="outlined" id="projectOne" />
         <Paper variant="outlined" id="projectTwo" />
         <Paper variant="outlined" id="projectThree" />
       </div>
