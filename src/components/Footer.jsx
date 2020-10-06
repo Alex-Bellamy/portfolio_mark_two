@@ -5,7 +5,11 @@ const Footer = () => {
   return (
     <div
       style={{
-        display: "flex",
+        alignItems: "center",
+        display: "inline-flex",
+        marginLeft: "35%",
+        position: "relative",
+        top: "25%",
       }}
     >
       <img
