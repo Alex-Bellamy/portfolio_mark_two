@@ -15,7 +15,7 @@ const Contact = () => {
         }}
       >
         contact.
-      </Typography>
+      </Typography> <br />
       <EmailFacility />
     </>
   );

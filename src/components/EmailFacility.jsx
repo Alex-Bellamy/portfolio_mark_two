@@ -46,6 +46,7 @@ const EmailFacility = () => {
   };
 
   return (
+    <div style={{ marginLeft: "20%", marginRight:"20%"}}>
     <form
       className="contact-form"
       noValidate
@@ -79,7 +80,7 @@ const EmailFacility = () => {
       />
       <Typography data-cy="message" variant="subtitle1">
         Drop me a message, even if it's just for some friendly advice
-      </Typography>
+      </Typography> <br />
       <TextField
         required
         label="Message"
@@ -88,11 +89,12 @@ const EmailFacility = () => {
         multiline
         rows={8}
         name="message"
-      />
-      <div>
+      /> 
+      <div> <br />
         <ColorButton
           variant="outlined"
           size="large"
+          style={{ marginLeft: "90%" }}
         >
           <input
             type="submit"
@@ -100,6 +102,8 @@ const EmailFacility = () => {
             style={{ color: primary, border: 0, background: 0, outline: "none" }}
           />
         </ColorButton>{" "}
+        <p id="emailAddress" style={{ alignItems: "center", display: "inline-flex", marginLeft: "5%", marginTop: "-10%" }}
+        >alexanderlbellamy@gmail.com
         <i
           id="linkedin-icon"
           onClick={() =>
@@ -114,8 +118,10 @@ const EmailFacility = () => {
           className="fa fa-github fa-3x"
           aria-hidden="true"
         />{" "}
+       </p>
       </div>
     </form>
+    </div>
   );
 };
 
