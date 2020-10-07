@@ -75,7 +75,7 @@ const PageGrid = () => {
       flexGrow: 1,
     },
     paper: {
-      height: "92.5vh",
+      height: "94vh",
       width: "100vw",
       boxShadow: "none",
     },
@@ -86,11 +86,14 @@ const PageGrid = () => {
       flexGrow: 1,
     },
     paper: {
-      height: "7.5vh",
+      height: "6vh",
       width: "100vw",
       color: primary,
       backgroundColor: "red",
       boxShadow: "none",
+      left: 0,
+      bottom: 0,
+      right: 0,
     },
   }));
 
