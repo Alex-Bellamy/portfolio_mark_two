@@ -1,17 +1,8 @@
-[
-  {
-    "id": 1,
-    "name": "BidSpace",
-    "description": "A React and Rails app. A platform which connects landlords with parking spaces and those looking to rent them"
-  },
-  {
-    "id": 2,
-    "name": "Rock, Paper, Scissors",
-    "description": "A classic game, don't let the computer beat you!"
-  },
-  {
-    "id": 3,
-    "name": "News on Rails",
-    "description": "An app built with React and Rails. A place where users can read news articles and features an admin side where journalists can publish articles"
-  }
-]
+{
+    "projectOneName": "BidSpace",
+    "projectOneDescription": "A React and Rails app. A platform which connects landlords with parking spaces and those looking to rent them",
+    "projectTwoName": "Rock, Paper, Scissors",
+    "projectTwoDescription": "A classic game, don't let the computer beat you!",
+    "projectThreeName": "News on Rails",
+    "projectThreedescription": "An app built with React and Rails. A place where users can read news articles and features an admin side where journalists can publish articles"
+}
