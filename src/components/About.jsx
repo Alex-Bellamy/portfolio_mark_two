@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Typography from "@material-ui/core/Typography";
 
 const About = () => {
+  const [about, setAbout] = useState([]);
+
+  useEffect(() => {
+    getAbout();
+  }, []);
+
+  const getAbout = async () => {
+    let response = await axios.get("./data/about.json");
+    setAbout(response.data);
+  };
+  
   return (
     <>
       <Typography
@@ -24,17 +36,9 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        A full stack software developer turning bold ideas into reality and
-        striving for that extra mile. Originally from London, a
-        konkursförvaltare (business recovery and insolvency specialist) and
-        property developer, it was time to change direction and pursue my dream
-        of bringing applications to life. <br />
-        Through intensive real life simulated situations, hundreds of hours of
-        grit and determination I have built skills in some of today’s most in
-        demand technologies including React & React Native, NodeJS as well as
-        Ruby on Rails. <br />
-        Check out my projects, if you like what you see or simply want some
-        friendly advice don’t hesitate to contact me.
+        {about.aboutParaOne} <br />
+        {about.aboutParaTwo} <br />
+        {about.aboutParaThree}
       </Typography>
     </>
   );
